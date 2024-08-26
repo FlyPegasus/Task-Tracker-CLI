@@ -1,11 +1,11 @@
-'''import sys
-print(sys.version)
-for line in sys.stdin:
-    if "exit" == line.rstrip():
-        break
-    print(f'Input : {line}')
-print("Exit")'''
+import os
+cwd = os.getcwd()
+# print("Current Directory path: ", cwd)
 
+# create Json file if not exists
+filepath = os.path.join(cwd, 'task_db.json')
+# print(filepath)
+# with open()
 
 # without sys, pure python
 
@@ -15,4 +15,4 @@ while True:
     if "exit" == line.rstrip():
         break
     print(line)
-print("Exit")
+print("Exited")
